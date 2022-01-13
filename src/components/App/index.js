@@ -77,8 +77,6 @@ getTaskOrdered = () => {
   const { taskList } = this.state;
   const notDone = taskList.filter((task) => !task.done);
   const done = taskList.filter((task) => task.done);
-  // const notDone = taskList.filter((task) => task.done === false);
-  // const done = taskList.filter((task) => task.done);
   return [...notDone, ...done];
 }
 
